@@ -7,6 +7,7 @@ import { FaInstagram } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 import { IoDocumentText } from "react-icons/io5";
 import Link from "next/link";
+import bgImg from "../public/hero/bg.png";
 
 const Hero = () => {
   const handleDownloadResume = () => {
@@ -91,11 +92,12 @@ const Hero = () => {
       <section className=" md:max-w-lg p-4 max-lg:hidden">
         <Image
           className="max-w-xl rounded-xl"
-          src="/hero/bg.svg"
+          src={bgImg}
           alt="Avnish Kumar"
-          priority="false"
+          priority={false}
           height={300}
           width={350}
+          placeholder="blur"
           style={{
             width: "350px",
             height: "auto",

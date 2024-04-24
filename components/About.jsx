@@ -9,6 +9,7 @@ import { PiGithubLogoFill } from "react-icons/pi";
 import { FaXTwitter } from "react-icons/fa6";
 import { IoIosMail } from "react-icons/io";
 import "../app/globals.css";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -18,7 +19,10 @@ const About = () => {
     >
       <section className="flex items-center gap-4 pt-3">
         <hr className="h-1 w-12 bg-gray-600 rounded-full" />
-        <p className="text-xl lg:text-2xl font-medium"> &lt;About Me &nbsp;/&gt;</p>
+        <p className="text-xl lg:text-2xl font-medium">
+          {" "}
+          &lt;About Me &nbsp;/&gt;
+        </p>
       </section>
 
       <section className="flex flex-col-reverse lg:flex-row lg:p-6 p-4 gap-6 mt-6">
@@ -26,7 +30,9 @@ const About = () => {
         <section className="w-full p-2 rounded-xl py-6 lg:py-0.5 shadow-sm flex  flex-col max-md:gap-6 card lg:p-4">
           <section className="flex items-center gap-4 h-1/5 ">
             <hr className="h-1 w-16 bg-gray-600 rounded-full" />
-            <p className="text-xl lg:text-2xl font-medium">&lt;My Skills &nbsp;/&gt;</p>
+            <p className="text-xl lg:text-2xl font-medium">
+              &lt;My Skills &nbsp;/&gt;
+            </p>
           </section>
           {/* <section className="text-xl font-semibold p-2">Frontend</section> */}
           <section className="p-2 flex gap-6 justify-center flex-wrap h-1/3 text-lg">
@@ -99,7 +105,7 @@ const About = () => {
           <section className="flex items-center gap-4 ">
             <hr className="h-1 w-16 bg-gray-700 rounded-full" />
             <p className=" font-medium text-xl lg:text-2xl">
-             &lt;More about Me &nbsp;/&gt;
+              &lt;More about Me &nbsp;/&gt;
             </p>
           </section>
           <p className="lg:text-xl text-lg text-gray-700 font-normal">
@@ -111,7 +117,11 @@ const About = () => {
             I specialize in turning code into meaningful and impactful
             applications. Proficient in JavaScript, React, Node, and Express.
             Databases like MongoDB and MySQL are my playground, where I organize
-            data with precision.Throughout my time in academia, I&apos;ve had the opportunity to engage in several captivating projects. From crafting dynamic web applications to navigating complex backend logic, each endeavor has been instrumental in honing my skills and nurturing my passion for innovation.
+            data with precision.Throughout my time in academia, I&apos;ve had
+            the opportunity to engage in several captivating projects. From
+            crafting dynamic web applications to navigating complex backend
+            logic, each endeavor has been instrumental in honing my skills and
+            nurturing my passion for innovation.
           </p>
           <section className="flex max-md:flex-col gap-6 md:items-center">
             {/* Social Media Icons */}
@@ -155,10 +165,15 @@ const About = () => {
             </section>
             {/* Buttons */}
             <section className="flex gap-4">
-              <button className="flex items-center px-3 py-2 bg-emerald-700 hover:bg-emerald-800  rounded-md text-white outline-none focus:ring-1 shadow-lg transform active:scale-y-90 transition-transform" aria-label="Contact Button">
+              <Link href="mailto:hi@theavnishkumar.in">
+              <button
+                className="flex items-center px-3 py-2 bg-emerald-700 hover:bg-emerald-800  rounded-md text-white outline-none focus:ring-1 shadow-lg transform active:scale-y-90 transition-transform"
+                aria-label="Contact Button"
+                >
                 <IoIosMail size={24} />
                 <span className="ml-1.5 md:text-lg">Contact</span>
               </button>
+                </Link>
             </section>
           </section>
         </section>

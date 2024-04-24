@@ -2,60 +2,56 @@
 import Image from "next/image";
 import "../app/globals.css";
 import { useState } from "react";
+import toast, { Toaster } from "react-hot-toast";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
+    name: "",
+    email: "",
+    message: "",
   });
-  const [successMessage, setSuccessMessage] = useState('');
-  const [errorMessage, setErrorMessage] = useState('');
+
+  const [submitting, setSubmitting] = useState(false); // New state variable to track form submission status
 
   const handleChange = (e) => {
     setFormData({
       ...formData,
-      [e.target.id]: e.target.value
+      [e.target.id]: e.target.value,
     });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setSubmitting(true); // Set submitting to true to disable the submit button during form submission
     try {
-      const response = await fetch('/api/send', {
-        method: 'POST',
+      const response = await fetch("/api/send", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json'
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({
           name: formData.name,
           email: formData.email,
-          message: formData.message
-        })
+          message: formData.message,
+        }),
       });
       if (!response.ok) {
-        throw new Error('Network response was not ok');
+        throw new Error("Network response was not ok");
       }
       // const data = await response.json();
       // console.log(data);
-      setSuccessMessage('Message sent successfully');
-      setErrorMessage('');
       // Optionally, clear form fields after successful submission
       setFormData({
-        name: '',
-        email: '',
-        message: ''
+        name: "",
+        email: "",
+        message: "",
       });
-      setTimeout(() => {
-        setSuccessMessage('');
-      }, 5000); // Set timeout to clear success message after 5 seconds
+      toast.success("Message sent successfully!");
     } catch (error) {
-      console.error('There was a problem with the fetch operation:', error);
-      setErrorMessage('Something went wrong. Please try again later.');
-      setSuccessMessage('');
-      setTimeout(() => {
-        setErrorMessage('');
-      }, 5000); // Set timeout to clear error message after 5 seconds
+      console.error("There was a problem with the fetch operation:", error);
+      toast.error("Message not sent. Please try again.");
+    } finally {
+      setSubmitting(false); // Set submitting back to false after submission is complete
     }
   };
 
@@ -146,20 +142,11 @@ const Contact = () => {
               type="submit"
               className="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
               aria-label="Submit Button"
+              disabled={submitting}
             >
-              Submit
+              {submitting ? "Submitting..." : "Submit"}
             </button>
           </form>
-          {successMessage && (
-            <span className="font-semibold text-green-500 rounded-xl p-3 m-4">
-              {successMessage}
-            </span>
-          )}
-          {errorMessage && (
-            <span className="font-semibold text-red-500 rounded-xl p-3 m-4">
-              {errorMessage}
-            </span>
-          )}
         </section>
       </section>
     </main>

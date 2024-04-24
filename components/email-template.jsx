@@ -11,8 +11,8 @@ export const EmailTemplate = ({ messageData, name, email }) => (
           textAlign: "center",
         }}
       >
-        <h2 style={{ color: "#6c757d" }}>Name: {name}</h2>
-        <h2 style={{ color: "#6c757d" }}>Email: {email}</h2>
+        <h4 style={{ color: "#6c757d" }}>Name: {name}</h4>
+        <h4 style={{ color: "#6c757d" }}>Email: {email}</h4>
         <p style={{ fontSize: "1rem", color: "#6c757d" }}>
           <strong>Message:</strong> {messageData}
         </p>
