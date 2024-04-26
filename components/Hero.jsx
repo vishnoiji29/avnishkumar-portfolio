@@ -89,7 +89,7 @@ const Hero = () => {
       </section>
 
       {/* Right Section */}
-      <section className=" md:max-w-lg p-4 max-lg:hidden">
+      <section className=" lg:max-w-lg p-4 max-lg:hidden">
         <Image
           className="max-w-xl rounded-xl"
           src={bgImg}

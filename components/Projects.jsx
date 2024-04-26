@@ -48,7 +48,7 @@ const Projects = () => {
       <section className=" flex justify-center items-center flex-col p-2 max-lg:gap-2">
         {project_data.map((e, index) => (
           <section
-            className="card shadow-lg rounded-xl flex lg:flex-row flex-col  gap-4 md:p-4 md:m-4 p-2 m-2 max-w-lg sm:max-w-xl md:max-w-2xl lg:max-w-fit xl:w-5/6"
+            className="card shadow-lg rounded-xl flex lg:flex-row flex-col  gap-4 md:p-4 md:m-4 p-2 m-2 max-w-md sm:max-w-xl md:max-w-2xl lg:max-w-fit xl:w-5/6"
             key={index}
           >
             {/* Image Section */}
@@ -59,9 +59,9 @@ const Projects = () => {
                 alt={`${e.title} by Avnish Kumar`}
                 priority={false}
                 height={300}
-                width={650}
+                width={600}
                 style={{
-                  width: "650px",
+                  width: "600px",
                   height: "auto",
                 }}
               />

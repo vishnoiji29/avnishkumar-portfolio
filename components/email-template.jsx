@@ -17,7 +17,7 @@ export const EmailTemplate = ({ messageData, name, email }) => (
           <strong>Message:</strong> {messageData}
         </p>
         <a
-          href="#"
+          href="https://theavnishkumar.in"
           style={{
             display: "inline-block",
             color: "#fff",
