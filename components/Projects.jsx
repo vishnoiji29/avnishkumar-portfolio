@@ -12,8 +12,8 @@ const Projects = () => {
       description:
         "The URL Shortener Project is a user-friendly web application built on Express.js, EJS, and MongoDB. It simplifies lengthy URLs into shareable, shortened versions, while offering user authentication for signup and login. Users can manage their shortened URLs with ease, and MongoDB integration ensures secure storage of data.",
       badges: ["EJS", "Express js", "MongoDB"],
-      github: "https://github.com.theavnishkumar/url-Shortener",
-      live: "https://github.com.theavnishkumar/url-Shortener",
+      github: "https://github.com/theavnishkumar/url-Shortener",
+      live: "https://github.com/theavnishkumar/url-Shortener",
     },
     /*}{
       title: "News App",
