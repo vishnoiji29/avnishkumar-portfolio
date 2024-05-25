@@ -1,4 +1,5 @@
 import { EmailTemplate } from '../../..//components/email-template.jsx';
+import { EmailTemplate2 } from '../../..//components/email-template.jsx';
 import { Resend } from 'resend';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
@@ -18,7 +19,8 @@ export async function POST(req) {
             from: `Avnish Kumar <hi@theavnishkumar.in>`,
             to: [`${email}`],
             subject: `Reply from Avnish Kumar`,
-            html: `Dear ${name},<br><br>Thank you for reaching out to us. This is an automated response to let you know that we have received your email. We appreciate your inquiry and will get back to you as soon as possible.<br><br>Best Regards,<br>Avnish Kumar<br>`,
+            // html: `Dear ${name},<br><br>Thank you for reaching out to us. This is an automated response to let you know that we have received your email. We appreciate your inquiry and will get back to you as soon as possible.<br><br>Best Regards,<br>Avnish Kumar<br>`,
+            react: EmailTemplate2({ name: name}),
         }]
         );
 
