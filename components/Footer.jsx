@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FaExternalLinkAlt,FaHome  } from "react-icons/fa";
+import { FaExternalLinkAlt, FaHome } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoIosMail } from "react-icons/io";
 
@@ -44,12 +44,12 @@ const Footer = () => {
       link: "https://getwaves.io/",
       icon: <FaExternalLinkAlt />,
     },
-    {
-      id: 2,
-      name: "Shapes",
-      link: "https://bgjar.com/animated-shape",
-      icon: <FaExternalLinkAlt />,
-    },
+    // {
+    //   id: 2,
+    //   name: "Shapes",
+    //   link: "https://bgjar.com/animated-shape",
+    //   icon: <FaExternalLinkAlt />,
+    // },
     {
       id: 3,
       name: "React Icons",
@@ -86,8 +86,10 @@ const Footer = () => {
               <address>Buxar, Bihar, India</address>
             </span>
             <span className="flex gap-2 items-center">
-              <IoIosMail className="text-xl"/>
-              <Link href="mailto:hi@theavnishkumar.in">hi@theavnishkumar.in</Link>
+              <IoIosMail className="text-xl" />
+              <Link href="mailto:hi@theavnishkumar.in">
+                hi@theavnishkumar.in
+              </Link>
             </span>
           </section>
         </section>
