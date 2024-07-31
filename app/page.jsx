@@ -4,7 +4,7 @@ import About from "@/components/About";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import AnimatedCursor from "react-animated-cursor";
+// import AnimatedCursor from "react-animated-cursor";
 import "./globals.css";
 
 export default function Home() {
@@ -17,7 +17,7 @@ export default function Home() {
         <Projects />
         <Contact />
         <Footer />
-        <AnimatedCursor
+        {/* <AnimatedCursor
           color="0, 160, 0"
           innerSize={10}
           outerSize={50}
@@ -37,7 +37,7 @@ export default function Home() {
             "button",
             ".link",
           ]}
-        />
+        /> */}
       </main>
       <main className="min-[320px]:hidden flex flex-col items-center justify-center w-svw min-h-svh p-4">
         <p className="text-xl font-semibold">
