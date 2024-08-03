@@ -7,23 +7,24 @@ import { FaLink, FaExternalLinkAlt } from "react-icons/fa";
 const Projects = () => {
   const project_data = [
     {
+      title: "Personal Finance Management App",
+      image: "pfms.png",
+      description:
+        "Personal Financial Management App is a user-friendly application built with React, Tailwind CSS, Express, and MongoDB. It allows users to create accounts, log in securely, and manage their expenses by adding, deleting, and modifying entries. Users can filter expenses by date, month, or year, and visualize their spending with a pie chart, making financial tracking simple and intuitive.",
+      badges: ["React js", "Tailwind css", "Express js", "MongoDB"],
+      github:
+        "https://github.com/theavnishkumar/personal-finance-management-app",
+      live: "https://money.kipa.me",
+    },
+    {
       title: "URL Shortener",
       image: "url-shortener.png",
       description:
         "The URL Shortener Project is a user-friendly web application built on Express.js, EJS, and MongoDB. It simplifies lengthy URLs into shareable, shortened versions, while offering user authentication for signup and login. Users can manage their shortened URLs with ease, and MongoDB integration ensures secure storage of data.",
       badges: ["EJS", "Express js", "MongoDB"],
       github: "https://github.com/theavnishkumar/url-Shortener",
-      live: "https://github.com/theavnishkumar/url-Shortener",
+      live: "https://url.ihavetech.com",
     },
-    /*}{
-      title: "News App",
-      image: "url-shortener.png",
-      description:
-        "The URL Shortener Project is a user-friendly web application built on Express.js, EJS, and MongoDB. It simplifies lengthy URLs into shareable, shortened versions, while offering user authentication for signup and login. Users can manage their shortened URLs with ease, and MongoDB integration ensures secure storage of data.",
-      badges: ["Next js", "Tailwind css", "Express js", "MongoDB"],
-      github: "https://github.com.theavnishkumar/url-Shortener",
-      live: "https://github.com.theavnishkumar/url-Shortener",
-    },*/
     {
       title: "Library Management System",
       image: "java.png",
