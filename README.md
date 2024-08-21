@@ -54,6 +54,7 @@ Here's an overview of the project's file structure:
 ├── next.config.js       # Next.js configuration
 ├── tailwind.config.js   # Tailwind CSS configuration
 └── package.json         # Project metadata and dependencies
+```
 
 ## Getting Started
 
