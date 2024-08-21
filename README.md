@@ -70,7 +70,7 @@ Ensure you have the following tools installed on your development machine:
 Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/theavnishkumar/portfolio.git
+git clone https://github.com/theavnishkumar/avnishkumar-portfolio.git
 cd portfolio
 ```
 
