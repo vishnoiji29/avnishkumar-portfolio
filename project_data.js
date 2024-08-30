@@ -1,5 +1,15 @@
 export const project_data = [
     {
+        title: "Online Auction System",
+        image: "online-auction.png",
+        description:
+            "The Online Auction System is a web application where users can bid on items in real-time. Sellers can list their items with details like name, description, price, and photos. Buyers can place bids on these items until the auction ends. The highest bid at the end of the auction wins the item. The system includes features like user registration, bidding history, and countdown timers for each auction.",
+        badges: ["React js", "Tailwind css", "Express js", "MongoDB", "Redux"],
+        github:
+            "https://github.com/theavnishkumar/online-auction-system",
+        live: "https://auction.kipa.me",
+    },
+    {
         title: "Personal Finance Management App",
         image: "pfms.png",
         description:
