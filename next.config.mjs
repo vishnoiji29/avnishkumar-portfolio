@@ -1,15 +1,18 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    images: {
-        remotePatterns: [
-          {
-            protocol: 'https',
-            hostname: '**',
-            port: '',
-            pathname: '/**',
-          },
-        ],
+  output: "export",
+  basePath: "/kdbishnoiji", // Apni GitHub repo ka naam yaha likhein
+  images: {
+    unoptimized: true, // GitHub Pages optimized images support nahi karta
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "**",
+        port: "",
+        pathname: "/**",
       },
+    ],
+  },
 };
 
 export default nextConfig;
