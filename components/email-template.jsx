@@ -36,7 +36,7 @@ export const EmailTemplate = ({ messageData, name, email }) => (
         <p style={{ fontSize: "0.875rem", color: "#6c757d" }}>Avnish Kumar</p> */}
       </section>
       <p style={{ textAlign: "center", color: "#6c757d" }}>
-        © 2024 Avnish Kumar. All rights reserved.
+        © 2025 Kuldeep Bishnoi. All rights reserved.
       </p>
     </section>
   </section>
@@ -62,11 +62,11 @@ export const EmailTemplate2 = ({ name }) => (
           <br />
           {`Best Regards,`}
           <br />
-          {`Avnish Kumar`}
+          {`Kuldeep Bishnoi`}
           <br />
         </p>
         <a
-          href="https://theavnishkumar.in"
+          href="https://github.com/vishnoiji29"
           style={{
             display: "inline-block",
             color: "#fff",
@@ -80,7 +80,7 @@ export const EmailTemplate2 = ({ name }) => (
         </a>
       </section>
       <p style={{ textAlign: "center", color: "#6c757d" }}>
-        © 2024 Avnish Kumar. All rights reserved.
+        © 2025 Kuldeep Bishnoi. All rights reserved.
       </p>
     </section>
   </section>
