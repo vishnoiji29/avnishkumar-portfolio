@@ -11,7 +11,7 @@ import bgImg from "../public/hero/bg.png";
 
 const Hero = () => {
   const handleDownloadResume = () => {
-    const resumeUrl = "/resume/Avnish_Kumar_Resume.pdf";
+    const resumeUrl = "";
     window.open(resumeUrl, "_blank");
   };
   return (
@@ -22,7 +22,7 @@ const Hero = () => {
       <section className=" max-w-3xl min-h-xl p-4 flex flex-col gap-3 m-4">
         <p className="lg:text-3xl text-2xl font-medium">👋 Hi, I am</p>
         <h1 className="lg:text-5xl text-4xl font-bold text-emerald-700">
-          Avnish Kumar
+          Kuldeep Bishnoi 
         </h1>
         <h2 className="lg:text-4xl text-3xl font-medium">
           I am a Full Stack Developer
@@ -36,7 +36,7 @@ const Hero = () => {
           <section className="flex items-center gap-4 mt-3">
             {/* Linkedin */}
             <a
-              href="https://linkedin.com/in/theavnishkumar"
+              href="https://linkedin.com/in/kdkhilery"
               target="_blank"
               rel="noreferrer"
               aria-label="Goto my linkedin profile"
@@ -45,7 +45,7 @@ const Hero = () => {
             </a>
             {/* Github */}
             <a
-              href="https://github.com/theavnishkumar"
+              href="https://github.com/vishnoiji29"
               target="_blank"
               rel="noreferrer"
               aria-label="Goto my github profile"
@@ -54,7 +54,7 @@ const Hero = () => {
             </a>
             {/* X */}
             <a
-              href="https://x.com/theavnishkumar"
+              href="https://x.com/vishnoiji29"
               target="_blank"
               rel="noreferrer"
               aria-label="Goto my x profile"
@@ -63,7 +63,7 @@ const Hero = () => {
             </a>
             {/* Instagram */}
             <a
-              href="https://instagram.com/theavnishkumar"
+              href="https://instagram.com/kdkhilery"
               target="_blank"
               rel="noreferrer"
               aria-label="Goto my instagram profile"
@@ -73,7 +73,7 @@ const Hero = () => {
           </section>
           {/* Buttons */}
           <section className="flex gap-4">
-            <Link href="mailto:hi@theavnishkumar.in">
+            <Link href="mailto:hi@kdbishnoi">
               <button className="flex items-center px-3 py-2 bg-emerald-700 hover:bg-emerald-800  rounded-md text-white outline-none focus:ring-1 shadow-lg transform active:scale-y-90 transition-transform" aria-label="Contact Button">
                 <IoIosMail size={24} />
                 <span className="ml-1.5 md:text-lg">Contact</span>
@@ -93,7 +93,7 @@ const Hero = () => {
         <Image
           className="max-w-xl rounded-xl"
           src={bgImg}
-          alt="Avnish Kumar"
+          alt="kuldeep Bishnoi"
           priority={false}
           height={300}
           width={350}
