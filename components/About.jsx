@@ -109,9 +109,7 @@ const About = () => {
             </p>
           </section>
           <p className="lg:text-xl text-lg text-gray-700 font-normal">
-            Hello! I&apos;m Avnish Kumar, a passionate and dedicated 4th-year
-            Computer Science student at Gyan Ganga Institute of Technology and
-            Sciences, Jabalpur.
+            Hello! I&apos;m Kuldeep Bishnoi, a passionate Web developer.
           </p>
           <p className="lg:text-xl text-lg text-gray-700 font-normal">
             I specialize in turning code into meaningful and impactful
@@ -128,7 +126,7 @@ const About = () => {
             <section className="flex items-center gap-4 mt-3">
               {/* Linkedin */}
               <a
-                href="https://linkedin.com/in/theavnishkumar"
+                href="https://linkedin.com/in/kdkhilery"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Goto my linkedin profile"
@@ -137,7 +135,7 @@ const About = () => {
               </a>
               {/* Github */}
               <a
-                href="https://github.com/theavnishkumar"
+                href="https://github.com/vishnoiji29"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Goto my github profile"
@@ -146,7 +144,7 @@ const About = () => {
               </a>
               {/* X */}
               <a
-                href="https://x.com/theavnishkumar"
+                href="https://x.com/vishnoiji29"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Goto my x profile"
@@ -155,7 +153,7 @@ const About = () => {
               </a>
               {/* Instagram */}
               <a
-                href="https://instagram.com/theavnishkumar"
+                href="https://instagram.com/kdkhilery"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Goto my instagram profile"
@@ -165,7 +163,7 @@ const About = () => {
             </section>
             {/* Buttons */}
             <section className="flex gap-4">
-              <Link href="mailto:hi@theavnishkumar.in">
+              <Link href="https://github.com/vishnoiji29">
               <button
                 className="flex items-center px-3 py-2 bg-emerald-700 hover:bg-emerald-800  rounded-md text-white outline-none focus:ring-1 shadow-lg transform active:scale-y-90 transition-transform"
                 aria-label="Contact Button"
