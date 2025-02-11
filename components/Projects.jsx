@@ -28,7 +28,7 @@ const Projects = () => {
               <Image
                 className=" rounded-lg shadow-lg"
                 src={`/projects/${e.image}`}
-                alt={`${e.title} by Avnish Kumar`}
+                alt={`${e.title} by KD Bishnoi`}
                 priority={false}
                 height={300}
                 width={600}
