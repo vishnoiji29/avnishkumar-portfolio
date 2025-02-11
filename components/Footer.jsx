@@ -8,31 +8,31 @@ const Footer = () => {
     {
       id: 1,
       name: "Linkedin",
-      link: "https://linkedin.com/in/theavnishkumar",
+      link: "https://linkedin.com/in/kdkhilery",
       icon: <FaExternalLinkAlt />,
     },
     {
       id: 2,
       name: "Github",
-      link: "https://github.com/theavnishkumar",
+      link: "https://github.com/vishnoiji29",
       icon: <FaExternalLinkAlt />,
     },
     {
       id: 3,
       name: "Facebook",
-      link: "https://facebook.com/theavnishkumar",
+      link: "https://facebook.com/kuldeepBishnoi",
       icon: <FaExternalLinkAlt />,
     },
     {
       id: 4,
       name: "X (Twitter)",
-      link: "https://x.com/theavnishkumar",
+      link: "https://x.com/kdkhilery",
       icon: <FaExternalLinkAlt />,
     },
     {
       id: 5,
       name: "Instagram",
-      link: "https://instagram.com/theavnishkumar",
+      link: "https://instagram.com/kdkhilery",
       icon: <FaExternalLinkAlt />,
     },
   ];
@@ -87,8 +87,8 @@ const Footer = () => {
             </span>
             <span className="flex gap-2 items-center">
               <IoIosMail className="text-xl" />
-              <Link href="mailto:hi@theavnishkumar.in">
-                hi@theavnishkumar.in
+              <Link href="https://github.com/vishnoiji29">
+                github.com/vishnoiji29
               </Link>
             </span>
           </section>
@@ -135,7 +135,7 @@ const Footer = () => {
         <p>
           &copy; {currentYear}{" "}
           <span className="text-black font-semibold underline">
-            Avnish Kumar
+            Kuldeep Bishnoi 
           </span>
           . All rights reserved.
         </p>
